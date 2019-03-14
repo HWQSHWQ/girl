@@ -22,15 +22,24 @@
 <div style="margin-top:20px;"  class="uk-grid">
 	<div class="uk-slidenav-position uk-width-1-6"></div>
 	<div class="uk-slidenav-position uk-width-4-6 " >
-	
-		<div class="uk-grid showmoney">
+	<a href="/index.php/index/index/index">返回</a>
+			
+		<div class="uk-grid showmoney" >
 			<div class="uk-width-5-6">
-				<a src href="/index.php/index/index/game1"><img  id = "op" class="click_money" src="__PUBLIC__/pic/non.png" width="" height="" alt="">  </a>
+				<img  id = "op" class="click_money" src="__PUBLIC__/pic/er.jpg" width="" height="" alt=""> 
 			</div>
-			<div class="uk-width-5-6">
-				11111111111111111111111111
-			</div>			
+			<p>搜集图片不易，仅需1毛即可观看</p>
 		</div>
+		
+		
+		
+		<div class="uk-grid showmoney" style="display:none">
+					<?php for ($i=1;$i<37;$i+=1){?>
+			<div class="uk-width-5-1">
+				<img  id = "op" class="click_money" src="__PUBLIC__/pic/3/{$i}.jpg" width="" height="" alt=""> 
+		<?php }?>	
+		</div>
+		
 		
 
 	</div>
@@ -38,12 +47,14 @@
 </div>	
 
 <script>
-	$(".showmoney").click(function(){
-		
-	});
 	
- 
-	
+	function dotry(){
+		$(".showmoney").show(); 
+	}
+</script>
+
+<script>
+setTimeout("dotry()",6000);
 </script>
 
 

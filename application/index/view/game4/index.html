@@ -1,0 +1,62 @@
+{include file="header" /}
+
+
+<link rel="stylesheet" href="__PUBLIC__/time/css/history.css" />
+<link rel="stylesheet" href="__PUBLIC__/uikit/css/components/slideshow.css" />
+<link rel="stylesheet" href="__PUBLIC__/uikit/css/components/dotnav.css" />
+<link rel="stylesheet" href="__PUBLIC__/uikit/css/components/slidenav.css" />
+<link rel="stylesheet" href="__PUBLIC__/uikit/css/components/slider.css" />
+
+<script  type="text/javascript" src="__PUBLIC__/uikit/js/components/slideshow.js"></script>
+<script  type="text/javascript" src="__PUBLIC__/uikit/js/components/slider.js"></script>
+<script  type="text/javascript" src="__PUBLIC__/time/js/main.js"></script>
+
+<div style="" class="uk-slidenav-position" data-uk-slideshow="">
+    <ul class="uk-slideshow " style="height: 100px">
+		<li>
+			<img src="__PUBLIC__/pic/game.png" width="" height="" alt="">       
+        </li>  
+    </ul>
+</div>
+
+<div style="margin-top:20px;"  class="uk-grid">
+	<div class="uk-slidenav-position uk-width-1-6"></div>
+	<div class="uk-slidenav-position uk-width-4-6 " >
+	<a href="/index.php/index/index/index">返回</a>
+			
+		<div class="uk-grid showmoney" >
+			<div class="uk-width-5-6">
+				<img  id = "op" class="click_money" src="__PUBLIC__/pic/er.jpg" width="" height="" alt=""> 
+			</div>
+			<p>搜集图片不易，仅需1毛即可观看</p>
+		</div>
+		
+		
+		
+		<div class="uk-grid showmoney" style="display:none">
+					<?php for ($i=1;$i<49;$i+=1){?>
+			<div class="uk-width-5-1">
+				<img  id = "op" class="click_money" src="__PUBLIC__/pic/4/{$i}.jpg" width="" height="" alt=""> 
+		<?php }?>	
+		</div>
+		
+		
+
+	</div>
+	<div class="uk-slidenav-position uk-width-1-6"></div>
+</div>	
+
+<script>
+	
+	function dotry(){
+		$(".showmoney").show(); 
+	}
+</script>
+
+<script>
+setTimeout("dotry()",6000);
+</script>
+
+
+
+{include file="footer" /}

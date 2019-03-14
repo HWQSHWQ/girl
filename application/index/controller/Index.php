@@ -19,22 +19,34 @@ class Index extends \think\Controller
     }
 
 
-    //游戏中心
-    public function game()
-    {
-        return $this->fetch('game/index');
-    }
-
-
-
     public function game1()
     {
         return $this->fetch('game1/index');
     }
+
     public function game2()
     {
         return $this->fetch('game2/index');
     }
 
+    public function game3()
+    {
+        return $this->fetch('game3/index');
+    }
+
+    public function game4()
+    {
+        return $this->fetch('game4/index');
+    }
+
+    public function game5()
+    {
+        return $this->fetch('game5/index');
+    }
+
+    public function game6()
+    {
+        return $this->fetch('game6/index');
+    }
 
 }
