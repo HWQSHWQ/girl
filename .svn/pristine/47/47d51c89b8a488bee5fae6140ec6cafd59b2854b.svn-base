@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit"><!-- 360开启急速模式！-->
+    <link rel="stylesheet" href="__PUBLIC__/uikit/css/uikit.min.css" />
+	
+</head>
+<body>
+<script  type="text/javascript" src="__PUBLIC__/uikit/js/jquery.min.js"></script>
+<script  type="text/javascript" src="__PUBLIC__/uikit/js/uikit.min.js"></script>
+<style>
+    .mainimg img{height:55px;width: 165px}
+	.header-img img{height:90%;width:100%}
+	.cooper-img img{width:100%}
+	
+</style>
+
+<!--导航栏-->
+<div style="">
+
+
+</div>
+
+<!--为导航给选定样式-->
+<script>
+	 $("li.{$action}").addClass('uk-active');
+</script>
